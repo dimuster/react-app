@@ -1,0 +1,11 @@
+.item {
+  color: aquamarine;
+  background-color: pink;
+  margin: 10px auto;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
