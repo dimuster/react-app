@@ -1,3 +1,4 @@
+import React from 'react';
 import s from './MyPosts.module.css';
 import Post from "./Post/Post"
 
@@ -6,7 +7,7 @@ const MyPosts = () => {
     <div className={s.postsArea}>
       My posts
       <div>
-        <textarea></textarea>
+        <textarea />
         <button>Add Post</button>
       </div>
       <div className={s.posts}>
