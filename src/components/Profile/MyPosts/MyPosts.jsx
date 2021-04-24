@@ -3,11 +3,12 @@ import s from './MyPosts.module.css';
 import Post from "./Post/Post"
 
 const MyPosts = () => {
-  const postsData = [
-    {'id': 1, 'message': 'Hi, how are you?)', 'likes': '3,8k'},
-    {'id': 2, 'message': 'Fine :)', 'likes': '1,6k'},
-    {'id': 3, 'message': 'wtf are u doing?', 'likes': '255'}
+  const posts = [
+    {'id': 1, 'text': 'Hi, how are you?)', 'likes': '3,8k'},
+    {'id': 2, 'text': 'Fine :)', 'likes': '1,6k'},
+    {'id': 3, 'text': 'wtf are u doing?', 'likes': '255'}
   ];
+  const postsElements = posts.map(p => <Post text={p.text} likes={p.likes}/>);
   return (
     <div className={s.postsArea}>
       <h3>My posts</h3>
@@ -20,8 +21,7 @@ const MyPosts = () => {
         </div>
       </div>
       <div className={s.posts}>
-        <Post message={postsData[0].message} likes={postsData[0].likes}/>
-        <Post message={postsData[1].message} likes={postsData[1].likes}/>
+        {postsElements}
       </div>
     </div>
   );
