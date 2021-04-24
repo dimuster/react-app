@@ -7,8 +7,12 @@
   padding: 10px;
 }
 
-.dialog {
+.dialog a {
+  text-decoration: none;
+}
 
+.dialog .active {
+  color: #000000;
 }
 
 .messages {
