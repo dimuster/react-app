@@ -33,6 +33,7 @@ export const addPost = () => {
     likes: 0
   };
   state.profilePage.posts.push(newPost);
+  state.profilePage.newPostText = '';
   rerenderEntireTree(state, addPost, updatePostText);
 }
 
