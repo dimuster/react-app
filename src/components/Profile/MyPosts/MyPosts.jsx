@@ -7,6 +7,7 @@ const MyPosts = (props) => {
   const addPost = () => {
     const text = addPostElement.current.value;
     props.addPost(text);
+    addPostElement.current.value = '';
   }
   const postsElements = props.posts.map(p => <Post text={p.text} likes={p.likes}/>);
   return (
