@@ -34,7 +34,7 @@ export const addPost = () => {
   const newPost = {
     id: 4,
     text: state.profilePage.newPostText,
-    likes: 0
+    likes: '0'
   };
   state.profilePage.posts.push(newPost);
   state.profilePage.newPostText = '';
